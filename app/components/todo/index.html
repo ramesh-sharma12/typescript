@@ -1,0 +1,25 @@
+﻿<section class="row">
+    <form class="form-group col-sm-12">
+        <div class="form-group col-sm-10  pad-20">
+            <div class="pad-20">
+                <input type='text' class="form-control col-sm-6" ng-control='title' [(ng-model)]="todo.title">
+            </div>
+            <div class="pad-20">
+                <textarea class="form-control col-sm-6 top-10"
+                          type='password'
+                          ng-control='description'
+                          [(ng-model)]="todo.description"></textarea>
+            </div>
+        </div>
+
+        <div class="col-sm-2 pad-20 top-30">
+            <button class="btn btn-primary" (click)="addTodo()">Add</button>
+        </div>
+    </form>
+</section>
+<section class="panel panel-default">
+    <todo-list class="panel-body"></todo-list>
+</section>
+<section>
+    <todo-details></todo-details>
+</section>

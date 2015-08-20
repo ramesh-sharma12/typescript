@@ -1,0 +1,16 @@
+﻿<div class="panel-default">
+    <div class="panel-body details">
+        <div class="col-sm-12 content-header title">
+            <div class="pull-left">
+                {{todo.title}}
+            </div>
+            <div class="pull-right">
+                <button class="btn btn-primary" (click)="editTodo()">Edit</button>
+            </div>
+        </div>
+        <div class="col-sm-12 desc">
+            {{todo.description}}
+            {{todo.createDate}}
+        </div>        
+    </div>
+</div>

@@ -1,0 +1,16 @@
+﻿<section class="header">
+    <nav class="navbar navbar-default navbar-static-top wrapper">
+        <div class="container">
+            <ul class="list-inline">
+                <li><a [router-link]="['/home']">Home</a></li>
+                <li><a [router-link]="['/about']">About</a></li>
+                <li class="active"><a [router-link]="['/todo']">Todo</a></li>
+            </ul>           
+        </div>
+    </nav>   
+</section>
+<section class="content">
+    <div class="wrapper">
+        <router-outlet></router-outlet>
+    </div>   
+</section>

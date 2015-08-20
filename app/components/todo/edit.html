@@ -1,0 +1,19 @@
+﻿<div class="panel-default ">
+    <div class="panel-body">
+        <form class="form-group">
+            <div class="edit">
+                <div class="edit.header"></div>
+                <div class="pad-10">
+                    <input class="form-control" #todo.title placeholder="Add Title" />
+                </div>
+                <div class="pad-10">
+                    <textarea class="form-control" #todo.description placeholder="Add Descritpion"></textarea>
+                </div>
+                <div class="footer pull-right">
+                    <button type="submit" class="btn btn-success">Save</button>
+                    <button class="btn btn-default" (click)="resetForm()">Reset</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
